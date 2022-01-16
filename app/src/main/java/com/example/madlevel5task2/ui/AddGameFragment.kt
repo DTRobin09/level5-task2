@@ -41,7 +41,6 @@ class AddGameFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         fabSave.setOnClickListener {
-            Log.w("TAG", "Inside click listener")
             saveGame()
         }
 
@@ -49,7 +48,7 @@ class AddGameFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.getItemId() == android.R.id.home){
+        if(item.itemId == android.R.id.home){
             onBackPressed();
         }
 
